@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="nav__border">
+        <div class="main">
+            <nav class="navigation">
+                <div class="navigation__logo">
+                    <p>NORM ARCHITECTURE</p>
+                </div>
+                <div class="navigation__links">
+                    <ul>
+                        <li><a href="#">ARCHITECTURE</a></li>
+                        <li><a href="#">DESIGN</a></li>
+                        <li><a href="#">CREATIVES</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header fade-in">
+            <div class="header__title1">
+                <p>DESIGN</p>
+            </div>
+            <div class="header__title2-flex">
+                <div class="header__title2">
+                    <h1>A SIMPLICITY THAT <br>CARRIES <span> BIGGER IDEAS</span></h1>
+                </div>
+                <div class="header__title3">
+                    <h2>/99</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header__banner fade-in one">
+    </div>
+    <div class="main">
+        <div class="photos">
+            <div class="photos__links">
+                <ul>
+                    <li><a href="">ALL</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="">BESPOKE</a></li>
+                    <li><a href="">DESIGN</a></li>
+
+                </ul>
+            </div>
+            <div class="photos__column2 ">
+                <div class="photos__card invisible">
+                    <img src="images/1.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+
+                <div class="photos__card invisible">
+                    <img src="images/3.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+
+                <div class="photos__card invisible">
+                    <img src="images/3.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+
+                <div class="photos__card invisible">
+                    <img src="images/4.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+            </div>
+
+
+            <div class="photos__column3 ">
+                <div class="photos__card invisible">
+                    <img src="images/2.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+
+                <div class="photos__card invisible">
+                    <img src="images/1.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+
+                <div class="photos__card invisible">
+                    <img src="images/4.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+
+                <div class="photos__card invisible">
+                    <img src="images/1.png" alt="" class="photos__img">
+                    <div class="photos__infos">
+                        <p>DESIGN</p>
+                        <p>2019</p>
+                    </div>
+                    <h3>Heritage Collection -</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="marquee">
+        <div id="text">
+            <h4>LOAD MORE/LOAD MORE/LOAD MORE/LOAD MORE/LOAD MORE/LOAD MORE/LOAD MORE/LOAD MORELOAD MORE/LOAD MORE/</h4>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="main">
+            <div class="footer__links">
+                <a href="">PRIVACY POLICY</a>
+                <a href="">2020 ARCHITECTURE</a>
+                <a href="">FR EN INST FB</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.invisible', {
+            delay: 200
+        });
+
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+                cursor.setAttribute("style", "top: " + (e.pageY - 5) + "px; left: " + (e.pageX - 5) + "px;")
+            })
+            /* const pictures = document.querySelectorAll(".invisible");
+
+
+             function fadeImage() {
+                 pictures.forEach(function() {
+                     if (window.scrollY > window.innerHeight / 2) {
+
+
+
+                         pictures.forEach(function(item) {
+                             item.classList.add("visible");
+                         });
+
+
+                     } else {
+                         pictures.forEach(function(item) {
+                             item.classList.add("visible");
+                         });
+                     }
+                 });
+
+             }
+             window.addEventListener('scroll', fadeImage);*/
+    </script>
+</body>
+
+
+</html>
